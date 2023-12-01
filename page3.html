@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Gallery</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .card.img-wrap {
+            height: 200px;
+            padding: .5rem;
+            display: block;
+            text-align: center;
+        }
+
+        .card img {
+            height: 100%;
+            width: auto;
+            max-width: 100%;
+            object-fit: cover;
+        }
+
+        .checked {
+            color: orange;
+        }
+
+        .title {
+            text-decoration: none;
+            color: #212529;
+        }
+
+        .price {
+            color: orange;
+            font-size: 22px;
+        }
+
+        .rating {
+            font-size: 13px;
+        }
+
+        @media(max-width:768) {
+            .card.img-wrap {
+                border-bottom: 1px solid #dee2e6;
+            }
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <nav class="navbar bg-body-tertiary bg-success-subtle ">
+        <div class="container-fluid justify-content-center ds-flex">
+            <a class="navbar-brand ds-flex" href="#">
+                <img src="picture.svg" alt="Logo" width="100" height="100" class="d-inline-block align-text-top">
+            </a>
+        </div>
+    </nav>
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card mb-3 shadow">
+                    <div class="row g-1">
+                        <div class="col-xl-9 col-md-4">
+                            <!-- Button trigger modal -->
+                            <!--<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                Launch static backdrop modal
+                            </button>-->
+
+                            <img src="7.jpg" alt="Random Photos" data-bs-toggle="modal" data-bs-target="#staticBackdrop6" />
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop6" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="7.jpg" alt="Random Photos" />
+                                            <p>PICTURE 1</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Understood</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-md-8 border-start">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-outline-primary btn-icon float-end">
+                                    <i class="fa fa-heart"></i>
+                                </a>
+                                <a href="#" class="h-6 mb-3 title">
+                                    PICTURE 1
+                                </a>
+                                <div class="mb-2">
+                                    <div class="rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="text-warning ms-1">5.0</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 shadow">
+                    <div class="row g-1">
+                        <div class="col-xl-9 col-md-4">
+                            <!-- Button trigger modal -->
+                            <!--<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                Launch static backdrop modal
+                            </button>-->
+
+                            <img src="8.jpg" alt="Random Photos" data-bs-toggle="modal" data-bs-target="#staticBackdrop7" />
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop7" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="8.jpg" alt="Random Photos" />
+                                            <p>PICTURE 2</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Understood</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-md-8 border-start">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-outline-primary btn-icon float-end">
+                                    <i class="fa fa-heart"></i>
+                                </a>
+                                <a href="#" class="h-6 mb-3 title">
+                                    PICTURE 2
+                                </a>
+                                <div class="mb-2">
+                                    <div class="rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="text-warning ms-1">5.0</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3 shadow">
+                    <div class="row g-1">
+                        <div class="col-xl-9 col-md-4">
+                            <!-- Button trigger modal -->
+                            <!--<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                Launch static backdrop modal
+                            </button>-->
+
+                            <img src="9.jpg" alt="Random Photos" data-bs-toggle="modal" data-bs-target="#staticBackdrop8" />
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop8" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img src="9.jpg" alt="Random Photos" />
+                                            <p>PICTURE 3</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Understood</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-9 col-md-8 border-start">
+                            <div class="card-body">
+                                <a href="#" class="btn btn-outline-primary btn-icon float-end">
+                                    <i class="fa fa-heart"></i>
+                                </a>
+                                <a href="#" class="h-6 mb-3 title">
+                                    PICTURE 3
+                                </a>
+                                <div class="mb-2">
+                                    <div class="rating">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="text-warning ms-1">5.0</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav aria-label="...">
+                <ul class="pagination pagination-lg justify-content-center">
+                    <li class="page-item ">
+                        <a class="page-link" href="index.html">1</a>
+                    </li>
+                    <li class="page-item "><a class="page-link" href="page2.html">2</a></li>
+                    <li class="page-item active" aria-current="page"><a class="page-link" href="page3.html">3</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</body>
+</html>
